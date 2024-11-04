@@ -1,69 +1,33 @@
 
-# Zichun Mini Project 1
+# Cloud-Hosted Jupyter Notebook Data Manipulation Project
 
-This is a Python project template with a functioning `Makefile`, a `.devcontainer`, and basic setup for CI/CD using GitHub Actions. The project also includes unit tests and linting with `pylint`.
+## Project Overview
+This project demonstrates data manipulation tasks using a cloud-hosted Jupyter Notebook on Google Colab. It includes setup, configuration, and a CI/CD pipeline, showcasing data cleaning, aggregation, filtering, and transformation techniques on a sample dataset.
 
-## Links
+## Setup Instructions
+1. **Open the Notebook**: Use the provided Google Colab link to access the notebook.
+2. **Install Required Libraries**: The necessary libraries (like `pandas`, `numpy`) will be installed in the notebook if not pre-installed on Google Colab.
 
-- **Version control Source Code Management Repository**: [github repo](https://github.com/nogibjj/zichun-miniproject-1).
-- **Link to successful CI/CD run**: [Link to GitHub Actions](https://github.com/nogibjj/zichun-miniproject-1/actions).
-
-
-## Project Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/zichun-miniproject-1.git
-cd zichun-miniproject-1
-```
-
-### 2. Install Dependencies
-
-You can install the required Python dependencies by running:
-
-```bash
-make setup
-```
-
-This will install all the packages listed in `requirements.txt`.
-
-### 3. Running the Linter
-
-To ensure your code follows proper Python style guidelines, run:
-
-```bash
-make lint
-```
-
-This will run `pylint` on the `src/main.py` file.
-
-### 4. Running Tests
-
-To run the unit tests using `pytest`, use the following command:
-
-```bash
-make test
-```
-
-The `Makefile` is set up to run the tests in the `tests/` directory.
-
-## Usage Instructions
-
-The project contains a simple `add` function and a main script. You can run the main script as follows:
-
-```bash
-python src/main.py
-```
-
-The `main.py` file will print "Hello, world!" when executed.
+## Data Manipulation Tasks
+The following data manipulation tasks are performed in the notebook:
+1. **Data Loading**: Load a dataset from Google Drive or a URL.
+2. **Data Cleaning**: Handle missing values and outliers.
+3. **Aggregation**: Group data and calculate statistics such as mean or sum.
+4. **Filtering**: Filter data based on specific conditions.
+5. **Transformation**: Create new columns and apply transformations.
+6. **Sorting**: Sort data based on columns.
 
 ## CI/CD Pipeline
+The project uses GitHub Actions for CI/CD to ensure code quality and functionality. The pipeline includes:
+- **Linting**: Ensures code follows best practices.
+- **Testing**: Validates data manipulation functions.
+- **Notebook Execution**: Runs the notebook and verifies outputs.
 
-This project uses GitHub Actions for Continuous Integration (CI). The workflow is defined in the `.github/workflows/ci.yml` file and runs automatically on every push to the main branch. The CI performs the following actions:
-- Linting with `pylint`
-- Running unit tests with `pytest`
+## Usage
+1. Clone this repository or download the project files.
+2. Open the notebook in Google Colab using the provided link.
+3. Follow the instructions in the notebook to see the data manipulation tasks.
 
-## Development Environment with Devcontainer
+## Deliverables
+- **Link to Notebook**: [Google Colab Link](#)
 
-A development container is included to ensure consistency in development environments. The `.devcontainer` folder contains a `Dockerfile` and `devcontainer.json` file for setting up the containerized development environment in tools like Visual Studio Code.
