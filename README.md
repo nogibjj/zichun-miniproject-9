@@ -1,33 +1,33 @@
 
-# Cloud-Hosted Jupyter Notebook Data Manipulation Project
+# Titanic Data Analysis Project
 
 ## Project Overview
-This project demonstrates data manipulation tasks using a cloud-hosted Jupyter Notebook on Google Colab. It includes setup, configuration, and a CI/CD pipeline, showcasing data cleaning, aggregation, filtering, and transformation techniques on a sample dataset.
+This project analyzes the Titanic dataset to explore survival rates based on passenger class (`Pclass`) and gender (`Sex`). The analysis is performed in a Google Colab notebook.
 
-## Setup Instructions
-1. **Open the Notebook**: Use the provided Google Colab link to access the notebook.
-2. **Install Required Libraries**: The necessary libraries (like `pandas`, `numpy`) will be installed in the notebook if not pre-installed on Google Colab.
+## Colab Notebook Link
+[Google Colab Notebook](https://colab.research.google.com/drive/15dGuUr4phT-mJBD5KobUJCBTrmy57sWZ?usp=sharing)
 
-## Data Manipulation Tasks
-The following data manipulation tasks are performed in the notebook:
-1. **Data Loading**: Load a dataset from Google Drive or a URL.
-2. **Data Cleaning**: Handle missing values and outliers.
-3. **Aggregation**: Group data and calculate statistics such as mean or sum.
-4. **Filtering**: Filter data based on specific conditions.
-5. **Transformation**: Create new columns and apply transformations.
-6. **Sorting**: Sort data based on columns.
+## Tasks Performed
+1. **Data Aggregation**: Grouped data by `Pclass` and `Sex` to calculate:
+   - Total Passengers.
+   - Number of Survivors.
+   - Survival Rate.
 
-## CI/CD Pipeline
-The project uses GitHub Actions for CI/CD to ensure code quality and functionality. The pipeline includes:
-- **Linting**: Ensures code follows best practices.
-- **Testing**: Validates data manipulation functions.
-- **Notebook Execution**: Runs the notebook and verifies outputs.
+2. **Visualizations**:
+   - **Overall Survival Data**: Bar chart showing total survivors vs non-survivors.
+   - **Survival by Gender**: Bar chart comparing survival rates of male and female passengers.
+   - **Survival by Passenger Class (Pclass)**: Bar chart comparing survival rates across passenger classes.
 
-## Usage
-1. Clone this repository or download the project files.
-2. Open the notebook in Google Colab using the provided link.
-3. Follow the instructions in the notebook to see the data manipulation tasks.
+## Visualizations
 
-## Deliverables
-- **Link to Notebook**: [Google Colab Link](#)
+### Survival by Gender
+![Survival by Gender](imgs/output.png)
+
+### Survival by Passenger Class (Pclass)
+![Survival Num by Pclass](imgs/output2.png)
+![Survival Rate by Pclass](imgs/output3.png)
+
+## Set Up and Run
+- Open the Colab Notebook using the link above.
+- Run the cells to see data aggregation and visualizations.
 
